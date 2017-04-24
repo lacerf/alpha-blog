@@ -1,7 +1,7 @@
-<h1>Create an Article</h1>
+<h1>Edit Existing Article</h1>
 
 <% if @article.errors.any?  %>
-<h2>The following errors prevented the article from being created:</h2>
+<h2>The following errors prevented the article from being edited:</h2>
 
   <ul>
   <%  @article.errors.full_messages.each do |msg| %>
@@ -27,4 +27,5 @@
 </p>
 
 <% end %>
+
 <p><%= link_to "Back to article list", articles_path %></p>
