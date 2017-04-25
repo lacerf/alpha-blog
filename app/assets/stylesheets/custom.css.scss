@@ -47,8 +47,18 @@ $navbar-default-bg: #08088A;
 }
 
 .description {
-  margin-top: 0px;
-  color: blue;
+  margin-top: 0;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 footer {
