@@ -17,6 +17,7 @@ class ArticlesController < ApplicationController
   def create
     
     @article = Article.new(article_params)
+    @article.user = User.first #hard coded user until we have a login
     if @article.save
       flash[:success] = "The article has been successfully saved!"
       redirect_to article_path(@article)
